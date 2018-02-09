@@ -56,11 +56,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // TODO: Write your code here
 function sumAndMultiply(a,b,c) {
-  var theSum = sum(sum(a, b)[0], c)[0];
-  var theProduct = multiply(multiply(a, b)[0], c)[0];
-  var sumMessage = a + ' and ' + b + ' and ' + c + ' sum to ' + theSum + '.'
-  var productMessage = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + theProduct + '.'
-  return [theSum, theProduct, sumMessage, productMessage];
+  var tripleSum = sum(sum(a, b)[0], c)[0];
+  var tripleProduct = multiply(multiply(a, b)[0], c)[0];
+  var sumMessage = a + ' and ' + b + ' and ' + c + ' sum to ' + tripleSum + '.'
+  var productMessage = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + tripleProduct + '.'
+  return [sum[1], multiply[1], sumMessage, productMessage];
 }
 
 // TODO: Here is the test for sumAndMultiply(); uncomment it to run it
@@ -79,14 +79,16 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // TODO: Write your code here
-var testArray = [2,3,4]; //eslint-disable-line
+var testArray = [2,3,4];
 
-function sumArray(testArray){ //eslint-disable-line
-
+function sumArray(testArray){
+  var arraySum = sum(sum(testArray[0], testArray[1])[0], testArray[2])[0];
+  var arraySumMessage = testArray + ' was passed in as an array of numbers, and ' + arraySum + ' is their sum.'
+  return [arraySum, arraySumMessage];
 }
 
 // TODO: Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
