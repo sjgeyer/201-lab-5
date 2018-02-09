@@ -113,3 +113,10 @@ function multiplyArray(testArray){
 testMultiplyArray(2,3,4);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+
+document.getElementById("sum").innerHTML = sum(4,7)[1];
+document.getElementById("multiply").innerHTML = multiply(5,9)[1];
+document.getElementById("sumAndMultiply1").innerHTML = sumAndMultiply(4,7,5)[2];
+document.getElementById("sumAndMultiply2").innerHTML = sumAndMultiply(4,7,5)[3];
+document.getElementById("sumArray").innerHTML = sumArray(testArray)[1];
+document.getElementById("multiplyArray").innerHTML = multiplyArray(testArray)[1];
