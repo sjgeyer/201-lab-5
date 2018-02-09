@@ -11,11 +11,12 @@ Test this function by hand in the console to get it working, and when you think 
 For TODO item, be sure to change it to say DONE when you have successfully completed the task*/
 
 // TODO: Write your code here
-function sum(a,b){ //eslint-disable-line
+function sum(a,b) {
   var theSum = a + b;
   var message = 'The sum of ' + a + ' and ' + b + ' is ' + theSum + '.';
   return [theSum, message];
 }
+
 
 // TODO: Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
