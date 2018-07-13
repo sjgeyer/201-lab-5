@@ -14,6 +14,7 @@ For TODO item, be sure to change it to say DONE when you have successfully compl
 function sum(a,b) {
   var theSum = a + b;
   var message = 'The sum of ' + a + ' and ' + b + ' is ' + theSum + '.';
+  console.log('sum function');
   return [theSum, message];
 }
 
