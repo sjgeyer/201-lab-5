@@ -19,7 +19,7 @@ function sum(a,b) {
 
 
 // TODO: Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+testSum();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -33,13 +33,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // TODO: Write your code here
 function multiply(a,b) {
-  var theProduct = a * b;
-  var message = 'The product of ' + a + ' and ' + b + ' is ' + theProduct + '.';
-  return [theProduct, message];
+  var product = a * b;
+  var message = 'The product of ' + a + ' and ' + b + ' is ' + product + '.';
+  return [product, message];
 }
 
 // TODO: Here is the test for multiply(); uncomment it to run it
-testMultiply(5,9);
+testMultiply();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -60,11 +60,11 @@ function sumAndMultiply(a,b,c) {
   var tripleProduct = multiply(multiply(a, b)[0], c)[0];
   var sumMessage = a + ' and ' + b + ' and ' + c + ' sum to ' + tripleSum + '.'
   var productMessage = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + tripleProduct + '.'
-  return [sum[1], multiply[1], sumMessage, productMessage];
+  return [tripleSum, tripleProduct, sumMessage, productMessage];
 }
 
 // TODO: Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
+testSumAndMultiply();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -88,7 +88,7 @@ function sumArray(testArray){
 }
 
 // TODO: Here is the test for sumArray(); uncomment it to run it
-testSumArray(testArray);
+testSumArray();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -110,13 +110,13 @@ function multiplyArray(testArray){
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyArray(2,3,4);
+testMultiplyArray();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
 
-document.getElementById("sum").innerHTML = sum(4,7)[1];
-document.getElementById("multiply").innerHTML = multiply(5,9)[1];
-document.getElementById("sumAndMultiply1").innerHTML = sumAndMultiply(4,7,5)[2];
-document.getElementById("sumAndMultiply2").innerHTML = sumAndMultiply(4,7,5)[3];
-document.getElementById("sumArray").innerHTML = sumArray(testArray)[1];
-document.getElementById("multiplyArray").innerHTML = multiplyArray(testArray)[1];
+document.getElementById("sum").textContent = sum(4,7)[1];
+document.getElementById("multiply").textContent = multiply(5,9)[1];
+document.getElementById("sumAndMultiply1").textContent = sumAndMultiply(4,7,5)[2];
+document.getElementById("sumAndMultiply2").textContent = sumAndMultiply(4,7,5)[3];
+document.getElementById("sumArray").textContent = sumArray(testArray)[1];
+document.getElementById("multiplyArray").textContent = multiplyArray(testArray)[1];
